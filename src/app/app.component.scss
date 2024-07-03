@@ -30,7 +30,13 @@ a {
     }
 }
 
-span {
+.construction-section {
     margin-top: 80px;
     color: white;
+    display: flex;
+    gap: 8px;
+    
+    span {
+        align-self: center;
+    }
 }
