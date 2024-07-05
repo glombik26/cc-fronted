@@ -11,7 +11,7 @@
 	"appPort": [
 	  "4200:4200"
 	],
-  	//"postStartCommand": "npm install && npm run start"
+  	"postStartCommand": "npm install && npm run start:local-devcontainer",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {		
