@@ -56,6 +56,7 @@ a {
 }
 
 .hero-background-container {
+    z-index: 0;
     position: absolute;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
     width: 100%;
@@ -74,7 +75,23 @@ a {
 }
 
 .header {
-    position: sticky;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 0 2rem;
+    box-sizing: border-box;
+
+    span {
+        line-height: var(--mdc-filled-button-container-height);
+        font-size: 2rem;
+    }
+    button {
+        span {
+            font-size: 1rem;
+        }
+    }
 }
 
 .hero-card {
@@ -87,14 +104,14 @@ a {
     box-sizing: border-box;
     min-height: 40rem;
     //padding: 7.5rem 0 2rem;
-    margin-top: -5rem;
-    background-image: url("../assets/disco-hintergrund-1920-x-1080-emx9s9mw503xfeyn.jpg");
+    margin-top: -3rem;
+    background-image: url("../assets/background.jpg");
     background-size: cover;
     background-position: center;
 
-    @media screen and (min-width: 960px) {
-        min-height: 43.75rem;
-    }
+    //@media screen and (min-width: 960px) {
+    //    min-height: 43.75rem;
+    //}
 }
 
 .hero-content {
@@ -104,20 +121,31 @@ a {
 .hero-content-content {
     box-sizing: border-box;
     height: 100%;
-    max-width: calc(100% - 3rem);
+    max-width: 100%;
     //padding: 15.5rem 0 2rem;
-    margin:auto;
-    padding: 0 1rem 0 1rem;
+    padding: 0 2rem 0 2rem;
 
+    h1 {
+        font-size: 2rem;
+        
+    }
 }
 
 .hero-content-container {
     z-index: 0;
-    margin-top: auto;
+    margin-top: 17rem;
     text-align: center;
 }
 
 .button-container {
     display: flex;
     justify-content: space-between;
+}
+
+.padding-left-1rem {
+    padding-left: 1rem;
+}
+
+.padding-right-1rem {
+    padding-right: 1rem;
 }
